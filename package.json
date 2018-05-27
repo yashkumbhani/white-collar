@@ -1,0 +1,17 @@
+{
+  "name": "white-collar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Neel Caffery",
+  "dependencies": {
+    "bitmex-realtime-api": "^0.2.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^5.0.1",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {}
+}
