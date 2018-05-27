@@ -11,7 +11,8 @@
     "bitmex-realtime-api": "^0.2.6",
     "crypto": "^1.0.1",
     "dotenv": "^5.0.1",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "technicalindicators": "^1.1.11"
   },
   "devDependencies": {}
 }

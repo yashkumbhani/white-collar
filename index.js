@@ -2,18 +2,21 @@ require('dotenv').config();
 const BitMEXClient = require('bitmex-realtime-api');
 
 const operations = require('./operations');
+const stratergies = require('./stratergies');
+const apiKey = process.env.API_KEY;
+const apiSecret = process.env.API_SECRET;
 
 let myQuote = {};
 // See 'options' reference below
 const client = new BitMEXClient({
   testnet: false,
-  apiKeyID: 'rA9FNkUYSu5C5k8fvUnsu3EA',
-  apiKeySecret: 'CumvDuW1tLnC2qHEIbbsTzYbg7LotMXCsI-KzezuFccpFyIF',
+  apiKeyID: apiKey,
+  apiKeySecret: apiSecret,
   maxTableLen: 10000 // the maximum number of table elements to keep in memory (FIFO queue)
 });
 
 
-operations.long('XBTUSD', 'Buy', 10, null, 7200);
+//operations.long('XBTUSD', 'Buy', 10, null, 7200);
 // client.addStream('XBTUSD', 'instrument', function (data, symbol, tableName) {
 //   if (!data.length) return;
 //   const quote = data[data.length - 1];
