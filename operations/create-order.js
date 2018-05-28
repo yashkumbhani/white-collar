@@ -3,6 +3,7 @@ const crypto = require('crypto');
 
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
+const baseURL = process.env.BASE_URL;
 
 const generateFormData = require('../templates/generate-form-data');
 
@@ -28,13 +29,13 @@ module.exports = function placeBuyOrder(currency, type, orderQty, leverage, pric
   var options = {
     method: 'POST',
     headers: headers,
-    uri: 'https://www.bitmex.com/api/v1/order',
+    uri: `${baseURL}/api/v1/order`,
     body: formData,
     json: true // Automatically stringifies the body to JSON
   };
 
   rp(options).then(function(parsedBody) {
-    console.log(parsedBody , '-- parsedBody --');
+    console.log(`Position Opened ${parsedBody.side} : ${parsedBody.orderQty} at ${parsedBody.price} : status: ${parsedBody.ordStatus}`)
     return parsedBody;
     // POST succeeded...
   }).catch(function(err) {

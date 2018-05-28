@@ -3,6 +3,7 @@ const crypto = require('crypto');
 
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
+const baseURL = process.env.BASE_URL;
 
 module.exports = function getPosition() {
   const verb = 'POST',
@@ -28,9 +29,9 @@ module.exports = function getPosition() {
   var options = {
     method: 'POST',
     headers: headers,
-    uri: 'https://www.bitmex.com/api/v1/position/isolate',
+    uri: `${baseURL}/api/v1/position/isolate',
     body: formData,
-    json: true 
+    json: true
   };
 
   return rp(options).then(function(parsedBody) {

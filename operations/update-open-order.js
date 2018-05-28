@@ -3,6 +3,7 @@ const crypto = require('crypto');
 
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
+const baseURL = process.env.BASE_URL;
 
 const generateFormData = require('../templates/generate-form-data');
 
@@ -28,7 +29,7 @@ module.exports = function updateBuyOrder(myPreviousOrder, currency, type, orderQ
   var options = {
     method: 'PUT',
     headers: headers,
-    uri: 'https://www.bitmex.com/api/v1/order',
+    uri: `${baseURL}/api/v1/order',
     body: formData,
     json: true // Automatically stringifies the body to JSON
   };

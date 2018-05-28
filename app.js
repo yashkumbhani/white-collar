@@ -4,11 +4,12 @@ const BitMEXClient = require('bitmex-realtime-api');
 const operations = require('./operations');
 const stratergies = require('./stratergies');
 const decider = require('./decider');
+const shouldClose = require('./utils/should-close');
+const livePosition = require('./utils/live-position');
 
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
 
-let previousQuote = {};
 // See 'options' reference below
 const client = new BitMEXClient({
   testnet: false,
@@ -19,18 +20,17 @@ const client = new BitMEXClient({
 
 let counter = 0;
 let myPreviousOrder = {}
-operations.createOrder('XBTUSD', 'Buy', 11, null, 7221);
-//operations.closePosition();
-//operations.deleteAllOpen();
-//operations.listPositions();
+let previousQuote = {}
+let counter2 = 0;
+// operations.createOrder('XBTUSD', 'Buy', 11, null, 7221);
 
 client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName) {
   if (!data.length) return;
   const quote = data[data.length - 1];
   let currentQuote = {};
   counter ++;
-  if(counter % 10 == 0){
-    console.log(quote , '-- quore--');
+  if(counter % 20 == 0){
+      counter2++;
       currentQuote = {
         fairPrice: quote.fairPrice,
         markPrice: quote.lastPrice,
@@ -38,10 +38,14 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
         lastPrice: quote.lastPrice,
         quoteCurrency:quote.quoteCurrency
       }
-      const value = await stratergies.EMA.EMA_55();
-      counter = 1;
-    //  decider(myPreviousOrder, currentQuote)
-      previousQuote = currentQuote;
+      console.log(currentQuote , '--currentQuote --',' -  counter2++ ',   counter2);
+      // const value = await stratergies.EMA.EMA_55();
+      // const executedPositions = await operations.listPositions();
+      // shouldClose(currentQuote, executedPositions)
+       counter = 1;
+      // const preQuote = Object.assign({},previousQuote);
+      // decider(myPreviousOrder, currentQuote, preQuote, value)
+      // previousQuote = currentQuote;
   }
 });
 // the last data element is the newest quote

@@ -3,6 +3,7 @@ const crypto = require('crypto');
 
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
+const baseURL = process.env.BASE_URL;
 
 module.exports = function deleteAllOpen(price) {
   const verb = 'DELETE',
@@ -28,7 +29,7 @@ module.exports = function deleteAllOpen(price) {
   var options = {
     method: 'DELETE',
     headers: headers,
-    uri: 'https://www.bitmex.com/api/v1/order/all',
+    uri: `${baseURL}/api/v1/order/all',
     body: data,
     json: true // Automatically stringifies the body to JSON
   };

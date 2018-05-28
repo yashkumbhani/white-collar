@@ -4,6 +4,7 @@ const crypto = require('crypto');
 
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
+const baseURL = process.env.BASE_URL;
 
 module.exports = function closePosition(price) {
   const verb = 'POST',
@@ -29,12 +30,13 @@ module.exports = function closePosition(price) {
   var options = {
     method: 'POST',
     headers: headers,
-    uri: 'https://www.bitmex.com/api/v1/order/closePosition',
+    uri: `${baseURL}/api/v1/order/closePosition',
     body: data,
     json: true // Automatically stringifies the body to JSON
   };
 
   return rp(options).then(function(parsedBody) {
+    console.log(`Position Closed: ${parsedBody.orderQty} at ${parsedBody.price}`)
     return parsedBody;
   }).catch(function(err) {
     console.log(err , '-- err --');
