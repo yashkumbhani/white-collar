@@ -29,7 +29,7 @@ module.exports = function updateBuyOrder(myPreviousOrder, currency, type, orderQ
   var options = {
     method: 'PUT',
     headers: headers,
-    uri: `${baseURL}/api/v1/order',
+    uri: `${baseURL}/api/v1/order`,
     body: formData,
     json: true // Automatically stringifies the body to JSON
   };

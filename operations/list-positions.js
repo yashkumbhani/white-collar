@@ -29,7 +29,7 @@ module.exports = function getPosition() {
   var options = {
     method: 'POST',
     headers: headers,
-    uri: `${baseURL}/api/v1/position/isolate',
+    uri: `${baseURL}/api/v1/position/isolate`,
     body: formData,
     json: true
   };

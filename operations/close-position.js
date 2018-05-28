@@ -30,7 +30,7 @@ module.exports = function closePosition(price) {
   var options = {
     method: 'POST',
     headers: headers,
-    uri: `${baseURL}/api/v1/order/closePosition',
+    uri: `${baseURL}/api/v1/order/closePosition`,
     body: data,
     json: true // Automatically stringifies the body to JSON
   };

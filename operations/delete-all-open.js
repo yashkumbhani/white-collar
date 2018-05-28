@@ -29,7 +29,7 @@ module.exports = function deleteAllOpen(price) {
   var options = {
     method: 'DELETE',
     headers: headers,
-    uri: `${baseURL}/api/v1/order/all',
+    uri: `${baseURL}/api/v1/order/all`,
     body: data,
     json: true // Automatically stringifies the body to JSON
   };

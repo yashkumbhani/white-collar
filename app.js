@@ -38,14 +38,13 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
         lastPrice: quote.lastPrice,
         quoteCurrency:quote.quoteCurrency
       }
-      console.log(currentQuote , '--currentQuote --',' -  counter2++ ',   counter2);
-      // const value = await stratergies.EMA.EMA_55();
-      // const executedPositions = await operations.listPositions();
-      // shouldClose(currentQuote, executedPositions)
+      const value = await stratergies.EMA.EMA_55();
+      const executedPositions = await operations.listPositions();
+      shouldClose(currentQuote, executedPositions)
        counter = 1;
-      // const preQuote = Object.assign({},previousQuote);
-      // decider(myPreviousOrder, currentQuote, preQuote, value)
-      // previousQuote = currentQuote;
+      const preQuote = Object.assign({},previousQuote);
+      decider(myPreviousOrder, currentQuote, preQuote, value)
+      previousQuote = currentQuote;
   }
 });
 // the last data element is the newest quote
