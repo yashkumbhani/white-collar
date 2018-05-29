@@ -1,3 +1,4 @@
+const fs = require('fs');
 const rp = require('request-promise');
 const crypto = require('crypto');
 
@@ -35,11 +36,11 @@ module.exports = function placeBuyOrder(currency, type, orderQty, leverage, pric
   };
 
   rp(options).then(function(parsedBody) {
-    console.log(`Position Opened ${parsedBody.side} : ${parsedBody.orderQty} at ${parsedBody.price} : status: ${parsedBody.ordStatus}`)
+    fs.writeFile('message.txt', `Position Opened  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${cp.ordStatus}: Time : ${cp.transactTime}`);
     return parsedBody;
     // POST succeeded...
   }).catch(function(err) {
-    console.log(err.message , '-- err  create order--');
+    fs.writeFile('error.txt', `Position Opening error :${err.message}`);
     // POST failed...
   });
 }

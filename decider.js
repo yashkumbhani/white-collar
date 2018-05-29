@@ -24,6 +24,5 @@ module.exports = async function(myPreviousOrder, currentQuote, previousQuote, EM
     myPreviousOrder = await operations.createOrder('XBTUSD', 'Sell', quantity, null, currentQuote.lastPrice);
     fs.writeFile('message.txt', `Sell Order : EMA : , ${currentQuote.lastPrice}`);
     console.log('Sell Order : EMA : ', EMA)
-
   }
 }

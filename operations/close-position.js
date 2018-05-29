@@ -1,4 +1,4 @@
-
+const fs = require('fs');
 const rp = require('request-promise');
 const crypto = require('crypto');
 
@@ -37,9 +37,10 @@ module.exports = function closePosition(price) {
 
   return rp(options).then(function(parsedBody) {
     console.log(`Position Closed: ${parsedBody.orderQty} at ${parsedBody.price}`)
+    fs.writeFile('message.txt', `Position Closed  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${cp.ordStatus}: Time : ${cp.transactTime}`);
     return parsedBody;
   }).catch(function(err) {
-    console.log(err.message , '-- err  close positions--');
+    fs.writeFile('error.txt', `Position Closed error :${err.message}`);
   });
 }
 
