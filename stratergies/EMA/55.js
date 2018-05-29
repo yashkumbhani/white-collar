@@ -1,5 +1,6 @@
 
 const rp = require('request-promise');
+const {EMA_SURPLUS} = require('../../enums/enums');
 
 module.exports = function (){
   var options = {
@@ -16,7 +17,7 @@ module.exports = function (){
   };
 
   return rp(options).then(function(data) {
-    return data.data[0].d[2];
+    return data.data[0].d[2]+EMA_SURPLUS;
     // POST succeeded...
   }).catch(function(err) {
     console.log(err , '-- err --');

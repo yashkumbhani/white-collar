@@ -39,7 +39,7 @@ module.exports = function placeBuyOrder(currency, type, orderQty, leverage, pric
     return parsedBody;
     // POST succeeded...
   }).catch(function(err) {
-    console.log(err , '-- err --');
+    console.log(err.message , '-- err  create order--');
     // POST failed...
   });
 }

@@ -5,7 +5,7 @@ const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
 const baseURL = process.env.BASE_URL;
 
-module.exports = function getPosition() {
+module.exports = function getPosition(EMA) {
   const verb = 'POST',
     path = '/api/v1/position/isolate',
     expires = new Date().getTime() + (60 * 1000 * 3); // 3 min in the future
@@ -35,10 +35,10 @@ module.exports = function getPosition() {
   };
 
   return rp(options).then(function(parsedBody) {
-    console.log(parsedBody , '-- parsedBody --');
+    console.log(`Positions : ${parsedBody.currentQty} , EMA: ${EMA}`);
     return parsedBody;
   }).catch(function(err) {
-    console.log(err , '-- err --');
+    console.log(err.message , '-- err  List positions--');
   });
 }
 

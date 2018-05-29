@@ -1,4 +1,5 @@
 module.exports = {
-  QUANTITY : 1,
-  PROFIT : 30
+  QUANTITY : 500,
+  PROFIT : 100,
+  EMA_SURPLUS:15
 }

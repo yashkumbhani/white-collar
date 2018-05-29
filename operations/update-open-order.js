@@ -38,7 +38,7 @@ module.exports = function updateBuyOrder(myPreviousOrder, currency, type, orderQ
     return parsedBody;
     // PUT succeeded...
   }).catch(function(err) {
-    console.log(err , '-- err --');
+    console.log(err.message , '-- err  update open order--');
     // PUT failed...
   });
 }

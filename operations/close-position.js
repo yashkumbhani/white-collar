@@ -39,7 +39,7 @@ module.exports = function closePosition(price) {
     console.log(`Position Closed: ${parsedBody.orderQty} at ${parsedBody.price}`)
     return parsedBody;
   }).catch(function(err) {
-    console.log(err , '-- err --');
+    console.log(err.message , '-- err  close positions--');
   });
 }
 

@@ -39,7 +39,7 @@ module.exports = function deleteAllOpen(price) {
     return parsedBody;
     // PUT succeeded...
   }).catch(function(err) {
-    console.log(err , '--- err ---');
+    console.log(err.message , '-- err delete open--');
     // PUT failed...
   });
 }

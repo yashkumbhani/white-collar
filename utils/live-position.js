@@ -1,10 +1,10 @@
 module.exports = function(executedPositions = {}){
-  if(executedPositions.execSellQty> executedPositions.execBuyQty){
+  if(executedPositions.currentQty > 0){
     return {
       type:'Buy',
       currentQty:executedPositions.currentQty
     }
-  }else if(executedPositions.execSellQty < executedPositions.execBuyQty){
+  }else if(executedPositions.currentQty < 0){
     return {
       type:'Sell',
       currentQty:executedPositions.currentQty

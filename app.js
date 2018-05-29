@@ -21,7 +21,6 @@ const client = new BitMEXClient({
 let counter = 0;
 let myPreviousOrder = {}
 let previousQuote = {}
-let counter2 = 0;
 // operations.createOrder('XBTUSD', 'Buy', 11, null, 7221);
 
 client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName) {
@@ -30,7 +29,6 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
   let currentQuote = {};
   counter ++;
   if(counter % 20 == 0){
-      counter2++;
       currentQuote = {
         fairPrice: quote.fairPrice,
         markPrice: quote.lastPrice,
@@ -39,7 +37,7 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
         quoteCurrency:quote.quoteCurrency
       }
       const value = await stratergies.EMA.EMA_55();
-      const executedPositions = await operations.listPositions();
+      const executedPositions = await operations.listPositions(value);
       shouldClose(currentQuote, executedPositions)
        counter = 1;
       const preQuote = Object.assign({},previousQuote);
