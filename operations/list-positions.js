@@ -1,6 +1,6 @@
 const rp = require('request-promise');
 const crypto = require('crypto');
-
+const fs = require('fs');
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
 const baseURL = process.env.BASE_URL;
@@ -35,6 +35,7 @@ module.exports = function getPosition(EMA) {
   };
 
   return rp(options).then(function(parsedBody) {
+  //  fs.writeFile('positions.txt', `Positions : ${parsedBody.currentQty} , EMA: ${EMA}`,() => {});
     console.log(`Positions : ${parsedBody.currentQty} , EMA: ${EMA}`);
     return parsedBody;
   }).catch(function(err) {

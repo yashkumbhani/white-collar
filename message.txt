@@ -1,1 +1,1 @@
-Sell Order : EMA : , 7446
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined

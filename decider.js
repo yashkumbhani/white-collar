@@ -1,19 +1,22 @@
 const operations = require('./operations');
 const livePosition = require('./utils/live-position');
 const {QUANTITY} = require('./enums/enums');
-let currentPosition = process.env.CURRENT_POSITION;
 
-module.exports = async function(myPreviousOrder, currentQuote, previousQuote, EMA) {
-  if (currentQuote.lastPrice >= EMA && previousQuote.lastPrice <= EMA) {
-    //  await operations.deleteAllOpen();
-    const executedPositions = await operations.listPositions();
+module.exports = async function(myPreviousOrder, currentQuote, previousQuote, EMA, executedPositions) {
+
+  const currentQty = executedPositions.currentQty;
+
+  if (currentQuote.lastPrice >= EMA && previousQuote.lastPrice <= EMA && currentQty <=0) {
+    await operations.deleteAllOpen();
+
     const lp = livePosition(executedPositions);
     const quantity = (lp && lp.type === 'Sell')
       ? lp.currentQty * 2
       : QUANTITY;
     myPreviousOrder = await operations.createOrder('XBTUSD', 'Buy', quantity, null, currentQuote.lastPrice);
-  } else if (currentQuote.lastPrice <= EMA && previousQuote.lastPrice >= EMA) {
-    const executedPositions = await operations.listPositions();
+  } else if (currentQuote.lastPrice <= EMA && previousQuote.lastPrice >= EMA && currentQty >= 0) {
+    await operations.deleteAllOpen();
+
     const lp = livePosition(executedPositions);
     const quantity = (lp && lp.type === 'Buy')
       ? lp.currentQty * 2

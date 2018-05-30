@@ -1,5 +1,5 @@
 {
-  "name": "white-collar",
+  "name": "white-coller",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,11 +8,8 @@
   },
   "author": "Neel Caffery",
   "dependencies": {
-    "bitmex-realtime-api": "^0.2.6",
-    "cheerio": "^1.0.0-rc.2",
     "crypto": "^1.0.1",
     "dotenv": "^5.0.1",
-    "htmlparser2": "^3.9.2",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
     "technicalindicators": "^1.1.11"

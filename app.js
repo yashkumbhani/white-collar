@@ -28,7 +28,7 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
   const quote = data[data.length - 1];
   let currentQuote = {};
   counter ++;
-  if(counter % 20 == 0){
+  if(counter % 10 == 0){
       currentQuote = {
         fairPrice: quote.fairPrice,
         markPrice: quote.lastPrice,
@@ -41,7 +41,7 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
       shouldClose(currentQuote, executedPositions)
        counter = 1;
       const preQuote = Object.assign({},previousQuote);
-      decider(myPreviousOrder, currentQuote, preQuote, value)
+      decider(myPreviousOrder, currentQuote, preQuote, value, executedPositions)
       previousQuote = currentQuote;
   }
 });

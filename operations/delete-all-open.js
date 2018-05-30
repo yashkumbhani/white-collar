@@ -1,6 +1,6 @@
 const rp = require('request-promise');
 const crypto = require('crypto');
-
+const fs = require('fs');
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
 const baseURL = process.env.BASE_URL;
@@ -35,11 +35,9 @@ module.exports = function deleteAllOpen(price) {
   };
 
   return rp(options).then(function(parsedBody) {
-    console.log(parsedBody , '---  parsedBody ---');
+    fs.writeFile('message.txt', `Position Opened  : ${parsedBody.symbol} : canceled open Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: OrderTye:${parsedBody.side} : Time : ${parsedBody.transactTime}`,() => {});
     return parsedBody;
-    // PUT succeeded...
   }).catch(function(err) {
-    console.log(err.message , '-- err delete open--');
-    // PUT failed...
+    fs.writeFile('message.txt',`${err.message}`,() => {});
   });
 }

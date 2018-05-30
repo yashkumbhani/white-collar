@@ -1,1 +1,1 @@
-Position Opening error :cp is not defined
+Position Opening error :400 - {"error":{"message":"Account has insufficient Available Balance, 1038351 XBt required","name":"ValidationError"}}

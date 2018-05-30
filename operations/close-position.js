@@ -37,10 +37,10 @@ module.exports = function closePosition(price) {
 
   return rp(options).then(function(parsedBody) {
     console.log(`Position Closed: ${parsedBody.orderQty} at ${parsedBody.price}`)
-    fs.writeFile('message.txt', `Position Closed  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${cp.ordStatus}: Time : ${cp.transactTime}`);
+    fs.writeFileSync('message.txt', `Position Closed  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
     return parsedBody;
   }).catch(function(err) {
-    fs.writeFile('error.txt', `Position Closed error :${err.message}`);
+    fs.writeFileSync('error.txt', `Position Closed error :${err.message}`,() => {});
   });
 }
 
