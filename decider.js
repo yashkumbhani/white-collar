@@ -13,7 +13,7 @@ module.exports = async function(myPreviousOrder, currentQuote, previousQuote, EM
     const quantity = (lp && lp.type === 'Sell')
       ? lp.currentQty * 2
       : QUANTITY;
-    myPreviousOrder = await operations.createOrder('XBTUSD', 'Buy', quantity, null, currentQuote.lastPrice);
+    myPreviousOrder = await operations.createOrder('XBTUSD', 'Buy', quantity, null, currentQuote.lastPrice -2);
   } else if (currentQuote.lastPrice <= EMA && previousQuote.lastPrice >= EMA && currentQty >= 0) {
     await operations.deleteAllOpen();
 
@@ -21,6 +21,6 @@ module.exports = async function(myPreviousOrder, currentQuote, previousQuote, EM
     const quantity = (lp && lp.type === 'Buy')
       ? lp.currentQty * 2
       : QUANTITY;
-    myPreviousOrder = await operations.createOrder('XBTUSD', 'Sell', quantity, null, currentQuote.lastPrice);
+    myPreviousOrder = await operations.createOrder('XBTUSD', 'Sell', quantity, null, currentQuote.lastPrice +2);
   }
 }
