@@ -37,7 +37,7 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
         quoteCurrency:quote.quoteCurrency
       }
       const value = await stratergies.EMA.EMA_55();
-      const executedPositions = await operations.listPositions(value);
+      const executedPositions = await operations.listPositions(value, currentQuote.lastPrice);
       shouldClose(currentQuote, executedPositions)
        counter = 1;
       const preQuote = Object.assign({},previousQuote);
