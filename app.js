@@ -4,8 +4,7 @@ const BitMEXClient = require('bitmex-realtime-api');
 const operations = require('./operations');
 const stratergies = require('./stratergies');
 const decider = require('./decider');
-const shouldClose = require('./utils/should-close');
-const livePosition = require('./utils/live-position');
+
 
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
@@ -38,7 +37,7 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
       }
       const value = await stratergies.EMA.EMA_55();
       const executedPositions = await operations.listPositions(value, currentQuote.lastPrice);
-      shouldClose(currentQuote, executedPositions)
+
        counter = 1;
       const preQuote = Object.assign({},previousQuote);
       decider(myPreviousOrder, currentQuote, preQuote, value, executedPositions)

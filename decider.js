@@ -5,8 +5,8 @@ const {QUANTITY} = require('./enums/enums');
 module.exports = async function(myPreviousOrder, currentQuote, previousQuote, EMA, executedPositions) {
 
   const currentQty = executedPositions.currentQty;
-
-  if (currentQuote.lastPrice >= EMA && previousQuote.lastPrice <= EMA && currentQty <=0) {
+  const didClose = shouldClose(currentQuote, executedPositions)
+  if (Math.floor(currentQuote.lastPrice)+1 >= Math.floor(EMA) && previousQuote.lastPrice <= EMA && currentQty <=0) {
     await operations.deleteAllOpen();
 
     const lp = livePosition(executedPositions);
@@ -14,7 +14,7 @@ module.exports = async function(myPreviousOrder, currentQuote, previousQuote, EM
       ? lp.currentQty * 2
       : QUANTITY;
     myPreviousOrder = await operations.createOrder('XBTUSD', 'Buy', quantity, null, currentQuote.lastPrice -0.5);
-  } else if (currentQuote.lastPrice <= EMA && previousQuote.lastPrice >= EMA && currentQty >= 0) {
+  } else if (Math.ceil(currentQuote.lastPrice) -1 <= EMA && previousQuote.lastPrice >= EMA && currentQty >= 0) {
     await operations.deleteAllOpen();
 
     const lp = livePosition(executedPositions);
