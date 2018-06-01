@@ -35,7 +35,7 @@ module.exports = function getPosition(EMA) {
   };
 
   return rp(options).then(function(parsedBody) {
-  //  fs.writeFile('positions.txt', `Positions : ${parsedBody.currentQty} , EMA: ${EMA}`,() => {});
+  //  fs.appendFile('positions.txt', ` \n Positions : ${parsedBody.currentQty} , EMA: ${EMA}`,() => {});
     console.log(`Positions : ${parsedBody.currentQty} , EMA: ${EMA}`);
     return parsedBody;
   }).catch(function(err) {

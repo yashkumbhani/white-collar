@@ -28,7 +28,7 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
   const quote = data[data.length - 1];
   let currentQuote = {};
   counter ++;
-  if(counter % 10 == 0){
+  if(counter % 20 == 0){
       currentQuote = {
         fairPrice: quote.fairPrice,
         markPrice: quote.lastPrice,

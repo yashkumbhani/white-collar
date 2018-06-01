@@ -36,11 +36,11 @@ module.exports = function placeBuyOrder(currency, type, orderQty, leverage, pric
   };
 
   rp(options).then(function(parsedBody) {
-    fs.writeFile('message.txt', `Position Opened  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
+    fs.appendFile('message.txt', `\n${parsedBody.side} Position Opened  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
     return parsedBody;
     // POST succeeded...
   }).catch(function(err) {
-    fs.writeFile('error.txt', `Position Opening error :${err.message}`,() => {});
+    fs.appendFile('error.txt', `Position Opening error :${err.message}`,() => {});
     // POST failed...
   });
 }

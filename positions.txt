@@ -1,1 +1,9 @@
-Positions : 750 , EMA: 7338.188
+Positions : 750 , EMA: 7338.188Positions : 750 , EMA: 7351.4595Positions : 750 , EMA: 7351.4478Positions : 750 , EMA: 7351.4478Positions : 750 , EMA: 7351.4478Positions : 750 , EMA: 7351.4478Positions : 750 , EMA: 7351.4478Positions : 750 , EMA: 7351.999Positions : 750 , EMA: 7351.999Positions : 750 , EMA: 7351.999Positions : 750 , EMA: 7351.999 
+ Positions : 750 , EMA: 7351.999 
+ Positions : 750 , EMA: 7351.999 
+ Positions : 750 , EMA: 7351.995 
+ Positions : 750 , EMA: 7351.995 
+ Positions : 750 , EMA: 7351.995 
+ Positions : 750 , EMA: 7351.995 
+ Positions : 750 , EMA: 7352.042 
+ Positions : 750 , EMA: 7352.042

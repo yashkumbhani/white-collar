@@ -35,9 +35,9 @@ module.exports = function deleteAllOpen(price) {
   };
 
   return rp(options).then(function(parsedBody) {
-    fs.writeFile('message.txt', `Position Opened  : ${parsedBody.symbol} : canceled open Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: OrderTye:${parsedBody.side} : Time : ${parsedBody.transactTime}`,() => {});
+    fs.appendFile('message.txt', `\nPosition Opened  : ${parsedBody.symbol} : canceled open Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: OrderTye:${parsedBody.side} : Time : ${parsedBody.transactTime}`,() => {});
     return parsedBody;
   }).catch(function(err) {
-    fs.writeFile('message.txt',`${err.message}`,() => {});
+    fs.appendFile('message.txt',`${err.message}`,() => {});
   });
 }

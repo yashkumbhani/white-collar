@@ -1,1 +1,124 @@
+Position Opened  : XBTUSD : Opening Price : 7352.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T00:13:06.812Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7350 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T00:31:53.103Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7353.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T00:38:46.903Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7353.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T00:46:19.797Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7355 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T00:52:19.652Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7355 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T01:04:32.564Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7355 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T01:14:31.274Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7354.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T01:14:51.699Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7355 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T03:05:16.418Z
+Position Closed  : XBTUSD : Opening Price : 7472 : Quanity: 750 : OrderStatus New: Time : 2018-05-31T04:47:55.531Z
+Position Closed  : XBTUSD : Opening Price : 7469.5 : Quanity: 750 : OrderStatus Filled: Time : 2018-05-31T04:48:05.511Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7531.5 : Quanity: 750 : OrderStatus New: Time : 2018-05-31T10:11:28.514Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7541 : Quanity: 750 : OrderStatus Filled: Time : 2018-05-31T12:55:27.254Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7550.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T12:55:50.183Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7540.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T12:57:37.128Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7545 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T12:58:24.891Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7542.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T13:03:45.301Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7538.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:40:39.978Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7539 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:40:50.119Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7538.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:41:22.376Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7539 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:41:37.476Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7538.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:41:57.642Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7539 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:42:57.506Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7538.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T13:43:06.562Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7538.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:53:57.392Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7538 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:54:57.615Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7538.5 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:55:07.228Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7538 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:55:38.345Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7538.5 : Quanity: 750 : OrderStatus Filled: Time : 2018-05-31T13:56:04.988Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7538 : Quanity: 1500 : OrderStatus Filled: Time : 2018-05-31T13:56:12.357Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7558 : Quanity: 750 : OrderStatus Filled: Time : 2018-05-31T19:12:24.364Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7559 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T19:12:27.385Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7559 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T19:15:41.784Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7559.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T19:16:05.642Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7554.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T20:27:01.736Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7555 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T20:32:40.345Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7554.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T20:33:25.482Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7551.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T20:40:29.894Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7553.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T20:41:00.617Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7554 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T20:44:17.374Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7548.5 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T21:44:25.927Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7549 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T21:48:08.431Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Buy Position Opened  : XBTUSD : Opening Price : 7549 : Quanity: 1500 : OrderStatus New: Time : 2018-05-31T21:49:37.717Z
+Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
+Sell Position Opened  : XBTUSD : Opening Price : 7496.5 : Quanity: 750 : OrderStatus New: Time : 2018-06-01T00:17:18.194Z
 Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
