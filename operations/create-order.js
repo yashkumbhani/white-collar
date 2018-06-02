@@ -8,8 +8,8 @@ const baseURL = process.env.BASE_URL;
 
 const generateFormData = require('../templates/generate-form-data');
 
-module.exports = function placeBuyOrder(currency, type, orderQty, leverage, price, clOrdID, clOrdLinkID) {
-  const formData = generateFormData(currency, type, orderQty, leverage, price, clOrdID, clOrdLinkID);
+module.exports = function placeBuyOrder(currency, type, orderQty, leverage, price, lastPrice) {
+  const formData = generateFormData(currency, type, orderQty, leverage, price);
   const postBody = JSON.stringify(formData);
   const verb = 'POST',
     path = '/api/v1/order',
@@ -36,7 +36,7 @@ module.exports = function placeBuyOrder(currency, type, orderQty, leverage, pric
   };
 
   rp(options).then(function(parsedBody) {
-    fs.appendFile('message.txt', `\n${parsedBody.side} Position Opened  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
+    fs.appendFile('message.txt', `\n${parsedBody.side} Position Opened  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Last Price : ${lastPrice} :Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
     return parsedBody;
     // POST succeeded...
   }).catch(function(err) {

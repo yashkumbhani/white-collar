@@ -14,5 +14,4 @@ module.exports = async function(currentQuote, executedPositions){
     const cp = await operations.closePosition(currentQuote.lastPrice);
     }
   }
-  return false
 }

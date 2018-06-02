@@ -27,7 +27,7 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
   const quote = data[data.length - 1];
   let currentQuote = {};
   counter ++;
-  if(counter % 20 == 0){
+  if(counter % 15 == 0){
       currentQuote = {
         fairPrice: quote.fairPrice,
         markPrice: quote.lastPrice,
@@ -35,9 +35,9 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
         lastPrice: quote.lastPrice,
         quoteCurrency:quote.quoteCurrency
       }
-      const value = await stratergies.EMA.EMA_55();
-      const executedPositions = await operations.listPositions(value, currentQuote.lastPrice);
+      let value = await stratergies.EMA.EMA_55();
 
+      const executedPositions = await operations.listPositions(value, currentQuote.lastPrice);
        counter = 1;
       const preQuote = Object.assign({},previousQuote);
       decider(myPreviousOrder, currentQuote, preQuote, value, executedPositions)

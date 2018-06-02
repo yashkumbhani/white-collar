@@ -36,7 +36,7 @@ module.exports = function getPosition(EMA, lastPrice) {
 
   return rp(options).then(function(parsedBody) {
   //  fs.appendFile('positions.txt', ` \n Positions : ${parsedBody.currentQty} , EMA: ${EMA}`,() => {});
-    console.log(`Positions : ${parsedBody.currentQty} , EMA: ${EMA} : Last Price: ${lastPrice}`);
+    console.log(` - -Positions : ${parsedBody.currentQty} , EMA: ${EMA} : Last Price: ${lastPrice}`);
     return parsedBody;
   }).catch(function(err) {
     console.log(err.message , '-- err  List positions--');
