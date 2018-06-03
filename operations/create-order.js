@@ -34,7 +34,7 @@ module.exports = function placeBuyOrder(currency, type, orderQty, leverage, pric
     body: formData,
     json: true // Automatically stringifies the body to JSON
   };
-
+  console.log(` ---${type}---- order placed :  ---${orderQty}-----: price--`, price);
   rp(options).then(function(parsedBody) {
     fs.appendFile('message.txt', `\n${parsedBody.side} Position Opened  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Last Price : ${lastPrice} :Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
     return parsedBody;

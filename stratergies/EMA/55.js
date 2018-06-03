@@ -1,5 +1,5 @@
 const rp = require('request-promise');
-const {EMA_SURPLUS} = require('../../enums/enums');
+const {EMA_SURPLUS, EMA_STRATERGY} = require('../../enums/enums');
 
 module.exports = function (){
   var options = {
@@ -11,7 +11,7 @@ module.exports = function (){
       Referer:'https://uk.tradingview.com/symbols/BTCUSD/technicals/',
       'Content-Type':'application/json'
     },
-    body:{"symbols":{"tickers":["BITFINEX:BTCUSD"],"query":{"types":[]}},"columns":["EMA20|1","EMA30|1","EMA50|1"]},
+    body:{"symbols":{"tickers":["BITFINEX:BTCUSD"],"query":{"types":[]}},"columns":["EMA20|1","EMA30|1", EMA_STRATERGY]},
     json: true
   };
 
