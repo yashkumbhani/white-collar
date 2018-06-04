@@ -6,7 +6,7 @@ const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
 const baseURL = process.env.BASE_URL;
 
-module.exports = function closePosition(price) {
+module.exports = function closePosition(price, log) {
   const verb = 'POST',
     path = '/api/v1/order/closePosition',
     expires = new Date().getTime() + (60 * 1000 * 3), // 3 min in the future
@@ -37,7 +37,7 @@ module.exports = function closePosition(price) {
 
   return rp(options).then(function(parsedBody) {
     console.log(`Position Closed: ${parsedBody.orderQty} at ${parsedBody.price}`)
-    fs.appendFile('message.txt', `\nPosition Closed  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
+    fs.appendFile('message.txt', `\nPosition Closed  :${log} : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
     return parsedBody;
   }).catch(function(err) {
     fs.appendFile('error.txt', `Position Closed error :${err.message}`,() => {});
