@@ -20,7 +20,6 @@ const client = new BitMEXClient({
 let counter = 0;
 let myPreviousOrder = {}
 let previousQuote = {}
-// operations.createOrder('XBTUSD', 'Buy', 11, null, 7221);
 
 client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName) {
   if (!data.length) return;
