@@ -4,6 +4,7 @@ const fs = require('fs');
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
 const baseURL = process.env.BASE_URL;
+const {SYMBOL} = require('../enums/enums');
 
 module.exports = function getPosition(EMA, lastPrice) {
   const verb = 'POST',
@@ -11,7 +12,7 @@ module.exports = function getPosition(EMA, lastPrice) {
     expires = new Date().getTime() + (60 * 1000 * 3); // 3 min in the future
 
   const formData = {
-    symbol:'XBTUSD',
+    symbol: SYMBOL,
     enabled:true
   };
   const postBody = JSON.stringify(formData);

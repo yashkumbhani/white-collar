@@ -4,6 +4,7 @@ const fs = require('fs');
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
 const baseURL = process.env.BASE_URL;
+const {SYMBOL} = require('../enums/enums');
 
 module.exports = function deleteAllOpen(price) {
   const verb = 'DELETE',
@@ -11,7 +12,7 @@ module.exports = function deleteAllOpen(price) {
     expires = new Date().getTime() + (60 * 1000 * 3), // 3 min in the future
     data = {
       price:price,
-      symbol:'XBTUSD'
+      symbol:SYMBOL
     };
   const postBody = JSON.stringify(data);
 
