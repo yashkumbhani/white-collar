@@ -35,7 +35,7 @@ module.exports = function getPosition(EMA, lastPrice) {
     json: true
   };
 
-  return rp(options).then(function(parsedBody) {
+  return rp(options).then(function(parsedBody = {}) {
   //  fs.appendFile('positions.txt', ` \n Positions : ${parsedBody.currentQty} , EMA: ${EMA}`,() => {});
     console.log(` - -Positions : ${parsedBody.currentQty} , EMA: ${EMA} : Last Price: ${lastPrice}`);
     return parsedBody;

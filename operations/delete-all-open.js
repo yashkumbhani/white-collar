@@ -36,7 +36,13 @@ module.exports = function deleteAllOpen(price) {
   };
 
   return rp(options).then(function(parsedBody) {
-    fs.appendFile('message.txt', `\nPosition Opened  : ${parsedBody.symbol} : canceled open Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: OrderTye:${parsedBody.side} : Time : ${parsedBody.transactTime}`,() => {});
+    const [openPosition] = parsedBody;
+    if(openPosition){
+      fs.appendFile('message.txt', `\nPosition Deleted  : ${openPosition.symbol} : canceled open Price : ${openPosition.price} : Quanity: ${openPosition.orderQty} : OrderStatus ${openPosition.ordStatus}: OrderTye:${openPosition.side} : Time : ${openPosition.transactTime}`,() => {});
+    }
+    else{
+      fs.appendFile('message.txt', 'No open positions to Delete');      
+    }
     return parsedBody;
   }).catch(function(err) {
     fs.appendFile('message.txt',`${err.message}`,() => {});

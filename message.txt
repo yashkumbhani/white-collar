@@ -1,38 +1,18 @@
-
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Sell Position Opened  : XBTUSD : Opening Price : 7603.5 : Last Price : 7605.5 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T09:32:12.475Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Buy Position Opened  : XBTUSD : Opening Price : 7604.5 : Last Price : 7603 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T09:34:48.487Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Sell Position Opened  : XBTUSD : Opening Price : 7604 : Last Price : 7604.5 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T09:36:01.878Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Buy Position Opened  : XBTUSD : Opening Price : 7605.5 : Last Price : 7603.5 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T10:22:31.877Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Sell Position Opened  : XBTUSD : Opening Price : 7606 : Last Price : 7612 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T12:19:46.735Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Buy Position Opened  : XBTUSD : Opening Price : 7607 : Last Price : 7605.5 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T12:21:14.374Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Buy Position Opened  : XBTUSD : Opening Price : 7607.5 : Last Price : 7607.5 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T12:21:36.829Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Sell Position Opened  : XBTUSD : Opening Price : 7603 : Last Price : 7608 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T12:22:55.989Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Buy Position Opened  : XBTUSD : Opening Price : 7606.5 : Last Price : 7606.5 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T12:24:44.714Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Buy Position Opened  : XBTUSD : Opening Price : 7606.5 : Last Price : 7606.5 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T12:25:31.311Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Buy Position Opened  : XBTUSD : Opening Price : 7606.5 : Last Price : 7607 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T12:26:09.918Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Buy Position Opened  : XBTUSD : Opening Price : 7608.5 : Last Price : 7606.5 :Quanity: 4000 : OrderStatus New: Time : 2018-06-06T12:27:50.173Z
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Opened  : undefined : canceled open Price : undefined : Quanity: undefined : OrderStatus undefined: OrderTye:undefined : Time : undefined
-Position Closed  :Take Loss : XBTUSD : Opening Price : 7578 : Quanity: 2000 : OrderStatus New: Time : 2018-06-06T16:29:48.219Z
-Position Closed  :Take Loss : XBTUSD : Opening Price : 7576 : Quanity: 2000 : OrderStatus New: Time : 2018-06-06T16:29:56.085Z
-Position Closed  :Take Loss : XBTUSD : Opening Price : 7576.5 : Quanity: null : OrderStatus Canceled: Time : 2018-06-06T16:29:56.831Z
-Position Closed  :Take Loss : XBTUSD : Opening Price : 7575.5 : Quanity: 2000 : OrderStatus Filled: Time : 2018-06-06T16:29:59.858Z
+No open positions to Delete
+Sell Position Opened  : XBTUSD : Opening Price : 7631.5 : Last Price : 7637.5 :Quanity: 1 : OrderStatus New: Time : 2018-06-08T08:09:17.329ZNo open positions to DeleteNo open positions to DeleteNo open positions to DeleteNo open positions to Delete
+Buy Position Opened  : XBTUSD : Opening Price : 7629.5 : Last Price : 7629.5 :Quanity: 2 : OrderStatus New: Time : 2018-06-08T08:18:01.624Z
+Position Deleted  : XBTUSD : canceled open Price : 7629.5 : Quanity: 2 : OrderStatus Canceled: OrderTye:Buy : Time : 2018-06-08T08:18:01.624Z
+Buy Position Opened  : XBTUSD : Opening Price : 7629.5 : Last Price : 7629.5 :Quanity: 2 : OrderStatus New: Time : 2018-06-08T08:18:49.881Z
+Position Deleted  : XBTUSD : canceled open Price : null : Quanity: 1000 : OrderStatus Canceled: OrderTye:Sell : Time : 2018-06-10T18:01:21.323ZNo open positions to Delete
+Buy Position Opened  : XBTUSD : Opening Price : 6736 : Last Price : 6729.5 :Quanity: 3000 : OrderStatus New: Time : 2018-06-10T18:44:56.768Z
+Buy Position Opened  : XBTUSD : Opening Price : 6741.5 : Last Price : 6729.5 :Quanity: 3000 : OrderStatus New: Time : 2018-06-10T18:44:59.650ZNo open positions to DeleteNo open positions to DeleteNo open positions to DeleteNo open positions to DeleteNo open positions to Delete
+Buy Position Opened  : XBTUSD : Opening Price : 6728 : Last Price : 6725 :Quanity: 200 : OrderStatus New: Time : 2018-06-10T18:57:13.088Z
+Position Deleted  : XBTUSD : canceled open Price : 6728 : Quanity: 200 : OrderStatus Canceled: OrderTye:Buy : Time : 2018-06-10T18:57:13.088Z
+Buy Position Opened  : XBTUSD : Opening Price : 6727.5 : Last Price : 6728 :Quanity: 200 : OrderStatus New: Time : 2018-06-10T18:57:27.051Z
+Position Deleted  : XBTUSD : canceled open Price : 6727.5 : Quanity: 200 : OrderStatus Canceled: OrderTye:Buy : Time : 2018-06-10T18:57:27.051Z
+Buy Position Opened  : XBTUSD : Opening Price : 6728 : Last Price : 6728 :Quanity: 200 : OrderStatus New: Time : 2018-06-10T18:57:34.996ZNo open positions to Delete
+Sell Position Opened  : XBTUSD : Opening Price : 6727.5 : Last Price : 6736.5 :Quanity: 400 : OrderStatus Filled: Time : 2018-06-10T19:11:19.777ZNo open positions to Delete
+Buy Position Opened  : XBTUSD : Opening Price : 6733 : Last Price : 6729.5 :Quanity: 400 : OrderStatus New: Time : 2018-06-10T19:11:42.357ZNo open positions to Delete
+Sell Position Opened  : XBTUSD : Opening Price : 6727.5 : Last Price : 6734.5 :Quanity: 400 : OrderStatus New: Time : 2018-06-10T19:12:06.923Z
+Position Closed  :Take Loss : XBTUSD : Opening Price : 6716 : Quanity: 200 : OrderStatus New: Time : 2018-06-10T19:12:38.000Z
+Position Closed  :Take Loss : XBTUSD : Opening Price : 6715 : Quanity: 200 : OrderStatus Filled: Time : 2018-06-10T19:12:41.025Z

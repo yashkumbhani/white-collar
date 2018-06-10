@@ -36,7 +36,7 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
       }
       counter = 1;
       const preQuote = Object.assign({},previousQuote);
-      await decider(myPreviousOrder, currentQuote, preQuote, value, executedPositions)
+      await decider(myPreviousOrder, currentQuote, preQuote);
       previousQuote = currentQuote;
   }
 });
