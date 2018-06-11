@@ -41,10 +41,10 @@ module.exports = function deleteAllOpen(price) {
       fs.appendFile('message.txt', `\nPosition Deleted  : ${openPosition.symbol} : canceled open Price : ${openPosition.price} : Quanity: ${openPosition.orderQty} : OrderStatus ${openPosition.ordStatus}: OrderTye:${openPosition.side} : Time : ${openPosition.transactTime}`,() => {});
     }
     else{
-      fs.appendFile('message.txt', 'No open positions to Delete');      
+      fs.appendFile('message.txt', 'No open positions to Delete');
     }
     return parsedBody;
   }).catch(function(err) {
-    fs.appendFile('message.txt',`${err.message}`,() => {});
+    return fs.appendFile('message.txt',`${err.message}`,() => {return;});
   });
 }

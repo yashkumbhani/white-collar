@@ -20,6 +20,7 @@ module.exports = function (){
     // POST succeeded...
   }).catch(function(err) {
     console.log(err , '-- err --');
+    return;
     // POST failed...
   });
 }

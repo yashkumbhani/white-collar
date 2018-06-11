@@ -41,7 +41,8 @@ module.exports = function closePosition(price, log) {
     fs.appendFile('message.txt', `\nPosition Closed  :${log} : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
     return parsedBody;
   }).catch(function(err) {
-    fs.appendFile('error.txt', `Position Closed error :${err.message}`,() => {});
+    return fs.appendFile('error.txt', `Position Closed error :${err.message}`,() => {return;});
+
   });
 }
 

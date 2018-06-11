@@ -8,13 +8,14 @@ module.exports = async function(currentQuote, executedPositions){
   if(type === 'Buy'){
     if((currentQuote.lastPrice > executedPositions.avgEntryPrice + PROFIT) || (currentQuote.lastPrice < executedPositions.avgEntryPrice - LOSS)) {
       const log = currentQuote.lastPrice > executedPositions.avgEntryPrice + PROFIT ? 'Take Profit' : 'Take Loss'
+      const deletePosition = await operations.deleteAllOpen();
       const cp = await operations.closePosition(currentQuote.lastPrice, log);
     }
   }else if(type === 'Sell'){
     if((currentQuote.lastPrice < executedPositions.avgEntryPrice - PROFIT) || (currentQuote.lastPrice > executedPositions.avgEntryPrice + LOSS)){
       const log = (currentQuote.lastPrice < executedPositions.avgEntryPrice - PROFIT) ? 'Take Profit' : 'Take Loss'
-
-    const cp = await operations.closePosition(currentQuote.lastPrice, log);
+      const deletePosition = await operations.deleteAllOpen();
+      const cp = await operations.closePosition(currentQuote.lastPrice, log);
     }
   }
 }

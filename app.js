@@ -18,15 +18,15 @@ const client = new BitMEXClient({
 });
 
 let counter = 0;
-let myPreviousOrder = {}
 let previousQuote = {}
-
+let executeLogic = true;
 client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName) {
+  try{
   if (!data.length) return;
   const quote = data[data.length - 1];
   let currentQuote = {};
   counter ++;
-  if(counter % 25 == 0){
+  if(counter % 15 == 0 && executeLogic){
       currentQuote = {
         fairPrice: quote.fairPrice,
         markPrice: quote.lastPrice,
@@ -34,14 +34,23 @@ client.addStream('XBTUSD', 'instrument', async function (data, symbol, tableName
         lastPrice: quote.lastPrice,
         quoteCurrency:quote.quoteCurrency
       }
+      executeLogic=false;
       counter = 1;
       const preQuote = Object.assign({},previousQuote);
-      await decider(myPreviousOrder, currentQuote, preQuote);
+      await decider( currentQuote, preQuote);
       previousQuote = currentQuote;
-  }
+      executeLogic = true;
+    }
+  }catch(e){
+        previousQuote = currentQuote;
+        executeLogic = true;
+      }
 });
 
-
+process.on('unhandledRejection', (err) => {
+  console.error(err, 'Unhandled  Rejection');
+    executeLogic = true;
+});
 // the last data element is the newest quote
 // Do something with the quote (.bidPrice, .bidSize, .askPrice, .askSize)
 

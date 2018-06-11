@@ -8,7 +8,7 @@ const baseURL = process.env.BASE_URL;
 
 const generateFormData = require('../templates/generate-form-data');
 
-module.exports = function placeBuyOrder(currency, type, orderQty, leverage, price, lastPrice) {
+module.exports = function placeBuyOrder(currency, type, orderQty, leverage, price, lastPrice, ema) {
   const formData = generateFormData(currency, type, orderQty, leverage, price);
   const postBody = JSON.stringify(formData);
   const verb = 'POST',
@@ -34,14 +34,14 @@ module.exports = function placeBuyOrder(currency, type, orderQty, leverage, pric
     body: formData,
     json: true // Automatically stringifies the body to JSON
   };
-  console.log(`[1] ---${type}---- order placed :  ---${orderQty}-----: price--`, price);
+  console.log(`[1] placing ${type} order : orderQty: ${orderQty}: price--${price} :  ema:${ema} : lastPrice:${lastPrice}`);
   return rp(options).then(function(parsedBody) {
     fs.appendFile('message.txt', `\n${parsedBody.side} Position Opened  : ${parsedBody.symbol} : Opening Price : ${parsedBody.price} : Last Price : ${lastPrice} :Quanity: ${parsedBody.orderQty} : OrderStatus ${parsedBody.ordStatus}: Time : ${parsedBody.transactTime}`,() => {});
-    console.log('[2]Inside Create Order');
+    console.log('[2]Order Created Success');
     return parsedBody;
     // POST succeeded...
   }).catch(function(err) {
-    fs.appendFile('error.txt', `Position Opening error :${err.message}`,() => {});
+    return fs.appendFile('error.txt', `Position Opening error :${err.message}`,() => {return;});
     // POST failed...
   });
 }
